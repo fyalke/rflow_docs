@@ -6,7 +6,7 @@ export default defineConfig({
     ["link", {rel: "icon", href: "/favicon.ico" }]
   ],
   title: "rflow_docs",
-  outDir: "./dist",
+  outDir: "./docs",
   description: "rflow docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
