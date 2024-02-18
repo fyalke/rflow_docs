@@ -1,7 +1,6 @@
 .temp
 .vite_opt_cache
 .vscode
-docs
-dist
+docs/*
 cache
 node_modules
