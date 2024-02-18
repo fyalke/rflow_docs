@@ -7,6 +7,7 @@ export default defineConfig({
   ],
   title: "rflow_docs",
   outDir: "./docs",
+  base: "/rflow_docs",
   description: "rflow docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
