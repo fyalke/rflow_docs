@@ -59,8 +59,6 @@ cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x
 # Build
 cmake --build .
     
-    
-cd build
 make -j $(($(nproc) + 1))
 sudo make install
 sudo ldconfig
