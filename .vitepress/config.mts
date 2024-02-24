@@ -29,11 +29,11 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Section 1',
+        text: 'Installing rflow',
         collapsed: true,
         items: [
 
-          { text: 'Blaaa section', link: '/my_page' }
+          { text: 'Installing rflow', link: '/installing_rflow' }
 
         ]
       },
