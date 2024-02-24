@@ -45,30 +45,19 @@ sudo apt install libgtkglext1 libgtkglext1-dev
 
 Build OpenCV from source:
 ```
-cd opencv/
-mkdir build
-
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
-    -D CMAKE_INSTALL_PREFIX=/usr/local \
-    -D WITH_CUDA=OFF \
-    -D BUILD_opencv_cudacodec=OFF \
-    -D CUDA_GENERATION=Auto \
-    -D WITH_CUBLAS=OFF \
-    -D WITH_TBB=ON \
-    -D WITH_V4L=ON \
-    -D WITH_QT=OFF \
-    -D WITH_OPENGL=OFF \
-    -D BUILD_PERF_TESTS=OFF \
-    -D BUILD_TESTS=OFF \
-    -D BUILD_TIFF=ON \
-    -D ENABLE_CXX11=ON \
-    -D WITH_PROTOBUF=ON \
-    -D BUILD_opencv_legacy=OFF \
-    -D ENABLE_PRECOMPILED_HEADERS=OFF \
-    -D INSTALL_PYTHON_EXAMPLES=OFF \
-    -D INSTALL_C_EXAMPLES=OFF \
-    -D OPENCV_EXTRA_MODULES_PATH=/home/vgrl/opencv_contrib/modules \
-    -D CUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
+# Install minimal prerequisites (Ubuntu 18.04 as reference)
+sudo apt update && sudo apt install -y cmake g++ wget unzip
+# Download and unpack sources
+wget -O opencv.zip https://github.com/opencv/opencv/archive/4.x.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.x.zip
+unzip opencv.zip
+unzip opencv_contrib.zip
+# Create build directory and switch into it
+mkdir -p build && cd build
+# Configure
+cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-4.x/modules ../opencv-4.x
+# Build
+cmake --build .
     
     
 cd build
