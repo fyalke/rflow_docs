@@ -45,14 +45,39 @@ sudo make install
 sudo ldconfig
 ```
 
+### Alternatively for a specific version of OpenCV:
+```
+git clone https://github.com/opencv/opencv
+cd opencv
+git checkout 4.6.0
+cd ..
+```
+Get extra module from extra
+```
+git clone https://github.com/opencv/opencv_contrib
+cd opencv_contrib
+git checkout 4.6.0
+cd .. 
+# Create build directory and switch into it
+mkdir -p opencv_build && cd opencv_build
+# Configure
+cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ../opencv
+# Build
+cmake --build .
+    
+sudo make install
+sudo ldconfig
+```
+
+## Add to the Path 
+```bash
+sudo nano .bashrc
+# Add the line below at the end of the .bashrc file:
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+```
 ## rflow
 ```
 sudo apt install libzmq3-dev
-
-then, in your source code, when using this library include the following header files:
- -> zmq.hpp
- -> zmq_addon.hpp
- -> zhelpers.hpp
 ```
 
 ## pyrflow
