@@ -16,24 +16,26 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/markdown-examples' }
+      { text: 'Get Started', link: '/intro' }
     ],
 
     sidebar: [
       {
         text: 'Introduction',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'What is rflow', link: '/intro' },
           { text: 'Runtime API Examples', link: '/api-examples' },
           { text: 'Blaaa section', link: '/my_page' }
         ]
       },
       {
-        text: 'Installing rflow',
+        text: 'Getting Started',
         collapsed: true,
         items: [
 
-          { text: 'Installing rflow', link: '/installing_rflow' }
+          { text: 'Setup Environment', link: '/setup_environment' },
+          { text: 'Get rflow', link: '/get_rflow' },
+          { text: 'Create First Project', link: '/create_first_project' }
 
         ]
       },

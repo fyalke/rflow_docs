@@ -1,13 +1,11 @@
-# rflow
-
-## Robotic Flow (R-Flow):
+# Setup Environment
 
 ## install dependencies
 
 ### opencv
 
 Install prerequisites:
-```
+```bash
 sudo apt-get install build-essential cmake git unzip pkg-config
 sudo apt-get install libjpeg-dev libtiff5-dev
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
@@ -74,6 +72,4 @@ pyzmq==25.1.0
 PySide6==6.4.2
 ```
 
-## Get Latest Release
-Go to this site:
-https://gitlab.com/mkbhs/rflow_releases
+

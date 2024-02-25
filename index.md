@@ -11,18 +11,16 @@ hero:
     alt: rflow
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Get Started
+      link: /intro
+  #  - theme: alt
+  #    text: 
+  #    link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Inter Process Communication
+    details: Use IPC for interchange data between different applications.
+  - title: Robot Simulation
+    details: Use bullet physics engine to simulate Robotic Systems.
 ---
 
